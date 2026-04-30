@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="uz">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dorixonalar Katalogi - ArzonApteka</title>
+    <link rel="icon" type="image/png" href="./image/llogo.png">
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+<body>
+
+    <header class="main-header">
+        <div class="header-container">
+            <a class="logo" href="./index.html">
+                <img src="./image/image.png" alt="ArzonApteka Logo">
+                <span>ArzonApteka</span>
+            </a>
+            <nav class="main-nav">
+                <a href="./index.html">Asosiy</a>
+                <a href="#">Telegram bot</a>
+                <a href="./dorihona_katalog.html">Dorixonalar katalogi</a>
+            </nav>
+            <div class="language-selector">
+                <a href="#" class="active">Oʻz</a>
+                <span>|</span>
+                <a href="#">Ру</a>
+                <span>|</span>
+                <a href="#">En</a>
+            </div>
+            <div class="header-icons">
+                <a href="./savat.html" class="cart-icon-container">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span id="cart-count">0</span> </a>
+                <i class="fas fa-sign-in-alt"></i>
+            </div>
+        </div>
+    </header>
+
+    <div class="search-bar-section">
+        <div class="search-container">
+            <div class="location">
+                <i class="fas fa-map-marker-alt"></i>
+                <span>Guliston</span>
+            </div>
+            <div class="search-input-wrapper">
+                <i class="fas fa-search"></i>
+                <input id="dorixona" type="text" placeholder="Qandey dori izlayabsiz?">
+            </div>
+        </div>
+    </div>
+
+    <div class="dorixona-container">
+        <header class="dorixona-header">
+            <h1>Dorixonalar O'zbekistonda</h1>
+        </header>
+
+        <section class="dorixona-top-controls">
+            <div class="dorixona-navigation-tabs">
+                <button class="dorixona-tab-button dorixona-active">Ro'yxat</button>
+            </div>
+            <button class="dorixona-online-search-button">Onlayn qidirish</button>
+        </section>
+
+        <section class="dorixona-search-bar">
+            <div class="dorixona-location-input">
+                <i class="fa-solid fa-location-dot"></i>
+                <span>O'zbekiston</span>
+            </div>
+            <div class="dorixona-pharmacy-input" id="dorixona-search-input">
+                <input type="text" placeholder="Dorixona nomi">
+                <i class="fa-solid fa-xmark"></i>
+            </div>
+        </section>
+
+        <main class="dorixona-list">
+
+            <article class="dorixona-card">
+                <div class="dorixona-card-header">
+                    <h2 class="pharmacy-name-title">Marjon Farm Trade Dorixonalar tarmog'i filial №9</h2>
+                    <i class="fa-solid fa-circle-info"></i>
+                </div>
+                <div class="dorixona-card-body">
+                    <div class="dorixona-left-info">
+                        <div class="dorixona-rating"><i class="fa-solid fa-star"></i><span>5</span><i
+                                class="fa-solid fa-circle-check"></i></div>
+                        <div class="dorixona-hours"><i class="fa-solid fa-clock"></i><span>08:00 - 23:00</span></div>
+                        <p class="dorixona-delivery">Yetkazib berish yo'q</p>
+                    </div>
+                    <div class="dorixona-right-info">
+                        <div class="dorixona-address-box">
+                            <div class="dorixona-address-line"><i class="fa-solid fa-location-dot"></i>
+                                <p>Toshtkent shahri, Mirzo Ulug'bek tumani, Yalango'ch dahasi, 21b-uy.</p>
+                            </div>
+                            <div class="dorixona-landmark-line"><i class="fa-solid fa-map-pin"></i>
+                                <p>Golden Buxara restoranining orqa tomoni. Korzinka bilan bir qatorda.</p>
+                            </div>
+                        </div>
+                        <div class="dorixona-actions">
+                            <span class="dorixona-distance">+998...ko'rsatish</span>
+                            <button class="dorixona-details-button">Batafsil...</button>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <article class="dorixona-card">
+                <div class="dorixona-card-header">
+                    <h2 class="pharmacy-name-title">Oq-Qanot Farm Tarmog'i №14</h2>
+                    <i class="fa-solid fa-circle-info"></i>
+                </div>
+                <div class="dorixona-card-body">
+                    <div class="dorixona-left-info">
+                        <div class="dorixona-rating"><i class="fa-solid fa-star"></i><span>4.8</span><i
+                                class="fa-solid fa-circle-check"></i></div>
+                        <div class="dorixona-hours"><i class="fa-solid fa-clock"></i><span>09:00 - 22:00</span></div>
+                        <p class="dorixona-delivery">Yetkazib berish bor</p>
+                    </div>
+                    <div class="dorixona-right-info">
+                        <div class="dorixona-address-box">
+                            <div class="dorixona-address-line"><i class="fa-solid fa-location-dot"></i>
+                                <p>Samarqand shahri, Rudakiy ko'chasi, 45-uy.</p>
+                            </div>
+                            <div class="dorixona-landmark-line"><i class="fa-solid fa-map-pin"></i>
+                                <p>Makro supermarketi ro'parasida.</p>
+                            </div>
+                        </div>
+                        <div class="dorixona-actions">
+                            <span class="dorixona-distance">+998...ko'rsatish</span>
+                            <button class="dorixona-details-button">Batafsil...</button>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <article class="dorixona-card">
+                <div class="dorixona-card-header">
+                    <h2 class="pharmacy-name-title">Dorixona HAYOT FARM MED</h2>
+                    <i class="fa-solid fa-circle-info"></i>
+                </div>
+                <div class="dorixona-card-body">
+                    <div class="dorixona-left-info">
+                        <div class="dorixona-rating"><i class="fa-solid fa-star"></i><span>5</span><i
+                                class="fa-solid fa-circle-info"></i></div>
+                        <div class="dorixona-hours"><i class="fa-solid fa-clock"></i><span>08:00 - 19:00</span></div>
+                        <p class="dorixona-delivery">Yetkazib berish yo'q</p>
+                    </div>
+                    <div class="dorixona-right-info">
+                        <div class="dorixona-address-box">
+                            <div class="dorixona-address-line"><i class="fa-solid fa-location-dot"></i>
+                                <p>Andijon viloyati, Asaka tumani, I. Manguberdi ko'chasi, 35-uy</p>
+                            </div>
+                            <div class="dorixona-landmark-line"><i class="fa-solid fa-map-pin"></i>
+                                <p>Asaka bozori</p>
+                            </div>
+                        </div>
+                        <div class="dorixona-actions">
+                            <span class="dorixona-distance">+998...ko'rsatish</span>
+                            <button class="dorixona-details-button">Batafsil...</button>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <article class="dorixona-card">
+                <div class="dorixona-card-header">
+                    <h2 class="pharmacy-name-title">Dorixona HAYOT FARM MED</h2>
+                    <i class="fa-solid fa-circle-info"></i>
+                </div>
+                <div class="dorixona-card-body">
+                    <div class="dorixona-left-info">
+                        <div class="dorixona-rating"><i class="fa-solid fa-star"></i><span>5</span><i
+                                class="fa-solid fa-circle-info"></i></div>
+                        <div class="dorixona-hours"><i class="fa-solid fa-clock"></i><span>08:00 - 19:00</span></div>
+                        <p class="dorixona-delivery">Yetkazib berish yo'q</p>
+                    </div>
+                    <div class="dorixona-right-info">
+                        <div class="dorixona-address-box">
+                            <div class="dorixona-address-line"><i class="fa-solid fa-location-dot"></i>
+                                <p>Andijon viloyati, Asaka tumani, I. Manguberdi ko'chasi, 35-uy</p>
+                            </div>
+                            <div class="dorixona-landmark-line"><i class="fa-solid fa-map-pin"></i>
+                                <p>Asaka bozori</p>
+                            </div>
+                        </div>
+                        <div class="dorixona-actions">
+                            <span class="dorixona-distance">+998...ko'rsatish</span>
+                            <button class="dorixona-details-button">Batafsil...</button>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <article class="dorixona-card">
+                <div class="dorixona-card-header">
+                    <h2 class="pharmacy-name-title">Farm Lyuks Markaziy Filiali</h2>
+                    <i class="fa-solid fa-circle-info"></i>
+                </div>
+                <div class="dorixona-card-body">
+                    <div class="dorixona-left-info">
+                        <div class="dorixona-rating"><i class="fa-solid fa-star"></i><span>4.5</span><i
+                                class="fa-solid fa-circle-check"></i></div>
+                        <div class="dorixona-hours"><i class="fa-solid fa-clock"></i><span>24/7</span></div>
+                        <p class="dorixona-delivery">Yetkazib berish bor</p>
+                    </div>
+                    <div class="dorixona-right-info">
+                        <div class="dorixona-address-box">
+                            <div class="dorixona-address-line"><i class="fa-solid fa-location-dot"></i>
+                                <p>Toshkent shahri, Yunusobod tumani, Amir Temur ko'chasi, 15-uy.</p>
+                            </div>
+                            <div class="dorixona-landmark-line"><i class="fa-solid fa-map-pin"></i>
+                                <p>Shaharning markaziy xiyoboni yonida.</p>
+                            </div>
+                        </div>
+                        <div class="dorixona-actions">
+                            <span class="dorixona-distance">+998...ko'rsatish</span>
+                            <button class="dorixona-details-button">Batafsil...</button>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <article class="dorixona-card">
+                <div class="dorixona-card-header">
+                    <h2 class="pharmacy-name-title">Salomatlik Dorixonasi №3</h2>
+                    <i class="fa-solid fa-circle-info"></i>
+                </div>
+                <div class="dorixona-card-body">
+                    <div class="dorixona-left-info">
+                        <div class="dorixona-rating"><i class="fa-solid fa-star"></i><span>4.9</span><i
+                                class="fa-solid fa-circle-check"></i></div>
+                        <div class="dorixona-hours"><i class="fa-solid fa-clock"></i><span>07:30 - 20:00</span></div>
+                        <p class="dorixona-delivery">Yetkazib berish yo'q</p>
+                    </div>
+                    <div class="dorixona-right-info">
+                        <div class="dorixona-address-box">
+                            <div class="dorixona-address-line"><i class="fa-solid fa-location-dot"></i>
+                                <p>Buxoro shahri, Mustaqillik ko'chasi, 2-uy.</p>
+                            </div>
+                            <div class="dorixona-landmark-line"><i class="fa-solid fa-map-pin"></i>
+                                <p>Tibbiyot kolleji ro'parasida.</p>
+                            </div>
+                        </div>
+                        <div class="dorixona-actions">
+                            <span class="dorixona-distance">+998...ko'rsatish</span>
+                            <button class="dorixona-details-button">Batafsil...</button>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <article class="dorixona-card">
+                <div class="dorixona-card-header">
+                    <h2 class="pharmacy-name-title">Tiniq Havo Farm MCHJ</h2>
+                    <i class="fa-solid fa-circle-info"></i>
+                </div>
+                <div class="dorixona-card-body">
+                    <div class="dorixona-left-info">
+                        <div class="dorixona-rating"><i class="fa-solid fa-star"></i><span>4.2</span><i
+                                class="fa-solid fa-circle-info"></i></div>
+                        <div class="dorixona-hours"><i class="fa-solid fa-clock"></i><span>09:00 - 18:00</span></div>
+                        <p class="dorixona-delivery">Yetkazib berish bor</p>
+                    </div>
+                    <div class="dorixona-right-info">
+                        <div class="dorixona-address-box">
+                            <div class="dorixona-address-line"><i class="fa-solid fa-location-dot"></i>
+                                <p>Qashqadaryo viloyati, Shahrisabz tumani, Yulduz ko'chasi, 7a-uy.</p>
+                            </div>
+                            <div class="dorixona-landmark-line"><i class="fa-solid fa-map-pin"></i>
+                                <p>Kichik savdo kompleksi ichida.</p>
+                            </div>
+                        </div>
+                        <div class="dorixona-actions">
+                            <span class="dorixona-distance">+998...ko'rsatish</span>
+                            <button class="dorixona-details-button">Batafsil...</button>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <article class="dorixona-card">
+                <div class="dorixona-card-header">
+                    <h2 class="pharmacy-name-title">Mega Farm Plus 24</h2>
+                    <i class="fa-solid fa-circle-info"></i>
+                </div>
+                <div class="dorixona-card-body">
+                    <div class="dorixona-left-info">
+                        <div class="dorixona-rating"><i class="fa-solid fa-star"></i><span>5</span><i
+                                class="fa-solid fa-circle-check"></i></div>
+                        <div class="dorixona-hours"><i class="fa-solid fa-clock"></i><span>24/7</span></div>
+                        <p class="dorixona-delivery">Yetkazib berish bor</p>
+                    </div>
+                    <div class="dorixona-right-info">
+                        <div class="dorixona-address-box">
+                            <div class="dorixona-address-line"><i class="fa-solid fa-location-dot"></i>
+                                <p>Namangan shahri, Bobur shoh ko'chasi, 88-uy.</p>
+                            </div>
+                            <div class="dorixona-landmark-line"><i class="fa-solid fa-map-pin"></i>
+                                <p>Yangi avtovokzal yonida.</p>
+                            </div>
+                        </div>
+                        <div class="dorixona-actions">
+                            <span class="dorixona-distance">+998...ko'rsatish</span>
+                            <button class="dorixona-details-button">Batafsil...</button>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <article class="dorixona-card">
+                <div class="dorixona-card-header">
+                    <h2 class="pharmacy-name-title">Dorilar Olami Filial 7</h2>
+                    <i class="fa-solid fa-circle-info"></i>
+                </div>
+                <div class="dorixona-card-body">
+                    <div class="dorixona-left-info">
+                        <div class="dorixona-rating"><i class="fa-solid fa-star"></i><span>4.7</span><i
+                                class="fa-solid fa-circle-check"></i></div>
+                        <div class="dorixona-hours"><i class="fa-solid fa-clock"></i><span>08:00 - 23:00</span></div>
+                        <p class="dorixona-delivery">Yetkazib berish yo'q</p>
+                    </div>
+                    <div class="dorixona-right-info">
+                        <div class="dorixona-address-box">
+                            <div class="dorixona-address-line"><i class="fa-solid fa-location-dot"></i>
+                                <p>Samarqand viloyati, Kattaqo'rg'on tumani, Navoiy ko'chasi.</p>
+                            </div>
+                            <div class="dorixona-landmark-line"><i class="fa-solid fa-map-pin"></i>
+                                <p>Shahar poliklinikasi ro'parasida.</p>
+                            </div>
+                        </div>
+                        <div class="dorixona-actions">
+                            <span class="dorixona-distance">+998...ko'rsatish</span>
+                            <button class="dorixona-details-button">Batafsil...</button>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <article class="dorixona-card">
+                <div class="dorixona-card-header">
+                    <h2 class="pharmacy-name-title">Oltin Pharm Aylanma Dorixona</h2>
+                    <i class="fa-solid fa-circle-info"></i>
+                </div>
+                <div class="dorixona-card-body">
+                    <div class="dorixona-left-info">
+                        <div class="dorixona-rating"><i class="fa-solid fa-star"></i><span>5</span><i
+                                class="fa-solid fa-circle-check"></i></div>
+                        <div class="dorixona-hours"><i class="fa-solid fa-clock"></i><span>24/7</span></div>
+                        <p class="dorixona-delivery">Yetkazib berish bor</p>
+                    </div>
+                    <div class="dorixona-right-info">
+                        <div class="dorixona-address-box">
+                            <div class="dorixona-address-line"><i class="fa-solid fa-location-dot"></i>
+                                <p>Toshkent viloyati, Chirchiq shahri, Temur Malik ko'chasi.</p>
+                            </div>
+                            <div class="dorixona-landmark-line"><i class="fa-solid fa-map-pin"></i>
+                                <p>Aylanma yo'l ustida.</p>
+                            </div>
+                        </div>
+                        <div class="dorixona-actions">
+                            <span class="dorixona-distance">+998...ko'rsatish</span>
+                            <button class="dorixona-details-button">Batafsil...</button>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <article class="dorixona-card">
+                <div class="dorixona-card-header">
+                    <h2 class="pharmacy-name-title">ECO Farm Tabiat Dorixonasi</h2>
+                    <i class="fa-solid fa-circle-info"></i>
+                </div>
+                <div class="dorixona-card-body">
+                    <div class="dorixona-left-info">
+                        <div class="dorixona-rating"><i class="fa-solid fa-star"></i><span>4.1</span><i
+                                class="fa-solid fa-circle-info"></i></div>
+                        <div class="dorixona-hours"><i class="fa-solid fa-clock"></i><span>10:00 - 17:00</span></div>
+                        <p class="dorixona-delivery">Yetkazib berish yo'q</p>
+                    </div>
+                    <div class="dorixona-right-info">
+                        <div class="dorixona-address-box">
+                            <div class="dorixona-address-line"><i class="fa-solid fa-location-dot"></i>
+                                <p>Farg'ona viloyati, Qo'qon shahri, Xudoyorxon ko'chasi.</p>
+                            </div>
+                            <div class="dorixona-landmark-line"><i class="fa-solid fa-map-pin"></i>
+                                <p>Dehqon bozori yaqinida.</p>
+                            </div>
+                        </div>
+                        <div class="dorixona-actions">
+                            <span class="dorixona-distance">+998...ko'rsatish</span>
+                            <button class="dorixona-details-button">Batafsil...</button>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <article class="dorixona-card">
+                <div class="dorixona-card-header">
+                    <h2 class="pharmacy-name-title">Zamin Farm Tarmog'i №2</h2>
+                    <i class="fa-solid fa-circle-info"></i>
+                </div>
+                <div class="dorixona-card-body">
+                    <div class="dorixona-left-info">
+                        <div class="dorixona-rating"><i class="fa-solid fa-star"></i><span>4.6</span><i
+                                class="fa-solid fa-circle-check"></i></div>
+                        <div class="dorixona-hours"><i class="fa-solid fa-clock"></i><span>07:00 - 21:00</span></div>
+                        <p class="dorixona-delivery">Yetkazib berish bor</p>
+                    </div>
+                    <div class="dorixona-right-info">
+                        <div class="dorixona-address-box">
+                            <div class="dorixona-address-line"><i class="fa-solid fa-location-dot"></i>
+                                <p>Xorazm viloyati, Urganch shahri, Al-Xorazmiy ko'chasi.</p>
+                            </div>
+                            <div class="dorixona-landmark-line"><i class="fa-solid fa-map-pin"></i>
+                                <p>Markaziy kasalxona yonida.</p>
+                            </div>
+                        </div>
+                        <div class="dorixona-actions">
+                            <span class="dorixona-distance">+998...ko'rsatish</span>
+                            <button class="dorixona-details-button">Batafsil...</button>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <article class="dorixona-card">
+                <div class="dorixona-card-header">
+                    <h2 class="pharmacy-name-title">DOSTLAR Farm 55</h2>
+                    <i class="fa-solid fa-circle-info"></i>
+                </div>
+                <div class="dorixona-card-body">
+                    <div class="dorixona-left-info">
+                        <div class="dorixona-rating"><i class="fa-solid fa-star"></i><span>4.7</span><i
+                                class="fa-solid fa-circle-check"></i></div>
+                        <div class="dorixona-hours"><i class="fa-solid fa-clock"></i><span>08:30 - 22:30</span></div>
+                        <p class="dorixona-delivery">Yetkazib berish yo'q</p>
+                    </div>
+                    <div class="dorixona-right-info">
+                        <div class="dorixona-address-box">
+                            <div class="dorixona-address-line"><i class="fa-solid fa-location-dot"></i>
+                                <p>Navoiy viloyati, Navoiy shahri, Gazg'on ko'chasi.</p>
+                            </div>
+                            <div class="dorixona-landmark-line"><i class="fa-solid fa-map-pin"></i>
+                                <p>Mahalla guzari.</p>
+                            </div>
+                        </div>
+                        <div class="dorixona-actions">
+                            <span class="dorixona-distance">+998...ko'rsatish</span>
+                            <button class="dorixona-details-button">Batafsil...</button>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+        </main>
+    </div>
+
+    <footer class="main-footer">
+        <div class="footer-container">
+
+            <div class="footer-col contact-info">
+                <div class="logo">
+                    <img style="width: 30px; height: 30px;" src="./image/image.png" alt="ArzonApteka Logo">
+                    <span>ArzonApteka</span>
+                </div>
+                <p>Toshkent sh., Sh. Rashidov koʻchasi, 93a</p>
+                <p>info@fcm.group</p>
+                <p>fcmgroup.uz</p>
+            </div>
+
+            <div class="footer-col links-section">
+                <h4>Shartlar</h4>
+                <nav class="footer-nav">
+                    <a href="#">Foydalanuvchi shartnomasi</a>
+                    <a href="#">Dorixonalarni ulash</a>
+                    <a href="#">Reklama</a>
+                    <a href="#">Foydalanish shartlari</a>
+                    <a href="#">Savollar va javoblar</a>
+                </nav>
+            </div>
+
+            <div class="footer-col qr-code-section">
+                <h4>Ilovani yuklang</h4>
+                <div class="qr-code-box">
+                    <img src="./image/qr.png" alt="Ilova QR Kodi">
+                </div>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-telegram-plane"></i></a>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            <div class="copyright">
+                © 2017-2025 Maʼlumot xizmati "ArzonApteka.Uz"
+            </div>
+
+            <hr class="footer-divider">
+
+            <div class="warning-text">
+                <p class="main-warning">
+                    OʻZ-OʻZINI DAVOLASH SOGʻLIGINGIZGA ZARAR YETKAZISHI MUMKIN! DORI-DARMONLARNI QOʻLLASH-DAN OLDIN
+                    SHIFOKOR BILAN MASLAHATLASHING.
+                </p>
+                <p class="disclaimer-text">
+                    Saytdagi maʼlumotlar tanishish maqsadida keltirilgan boʻlib, shifokor bilan shaxsiy koʻrish-tuvining
+                    oʻrnini bosolmaydi. Saytda koʻrsatilgan dori vositalarining qoʻllanishiga qarab koʻrsatkichlari
+                    boʻlishi mumkin. Ulardan foydalanishdan oldin ishlatma qoʻllanmasi bilan tanishish yoki
+                    mutaxassislardan maslahat olish tavsiya etiladi. (Davlat monopoliyaga qarshi kurash qoʻmitasining
+                    2010 yil 18 oktabrdagi № 1024-4-sonli qaroriga muvofiq, Adliya vazirligida roʻyxatga olingan.)
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./js/script.js"></script>
+
+</body>
+
+</html>

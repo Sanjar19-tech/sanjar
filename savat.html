@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="uz">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ArzonApteka - shaharingiz dorixonalarida </title>
+    <link rel="icon" type="image/png" href="./image/llogo.png">
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+<body>
+
+    <header class="main-header">
+        <div class="header-container">
+            <a class="logo" href="./index.html">
+                <img src="./image/image.png" alt="ArzonApteka Logo">
+                <span>ArzonApteka</span>
+            </a>
+            <nav class="main-nav">
+                <a href="./index.html">Asosiy</a>
+                <a href="#">Telegram bot</a>
+                <a href="./dorihona_katalog.html">Dorixonalar katalogi</a>
+            </nav>
+            <div class="language-selector">
+                <a href="#" class="active">Oʻz</a>
+                <span>|</span>
+                <a href="#">Ру</a>
+                <span>|</span>
+                <a href="#">En</a>
+            </div>
+            <div class="header-icons">
+                <a href="./savat.html" class="cart-icon-container">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span id="cart-count">0</span> </a>
+                <i class="fas fa-sign-in-alt"></i>
+            </div>
+        </div>
+    </header>
+
+    <div class="search-bar-section">
+        <div class="search-container">
+            <div class="location">
+                <i class="fas fa-map-marker-alt"></i>
+                <span>Guliston</span>
+            </div>
+            <div class="search-input-wrapper">
+                <i class="fas fa-search"></i>
+                <input type="text" placeholder="Qandey dori izlayabsiz?">
+            </div>
+
+        </div>
+    </div>
+
+    <div class="search-results-list" style="display: none;">
+    </div>
+    <style>
+        /* Savat belgisi tepasidagi raqam stili */
+        .cart-icon-container {
+            position: relative;
+        }
+
+        #cart-count {
+            position: absolute;
+            top: -10px;
+            right: -12px;
+            background: #ff4d4d;
+            color: white;
+            border-radius: 50%;
+            padding: 2px 6px;
+            font-size: 11px;
+            font-weight: bold;
+        }
+
+        .cart-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 20px;
+        }
+    </style>
+
+    <div class="container" style="min-height: 60vh; padding: 40px 20px;">
+        <h1>Savatingiz</h1>
+        <hr><br>
+        <div class="cart-content" id="cart-items-container">
+        </div>
+    </div>
+
+    <footer class="main-footer">
+        <div class="footer-container">
+
+            <div class="footer-col contact-info">
+                <div class="logo">
+                    <img style="width: 30px; height: 30px;" src="./image/image.png" alt="ArzonApteka Logo">
+                    <span>ArzonApteka</span>
+                </div>
+                <p>Toshkent sh., Sh. Rashidov koʻchasi, 93a</p>
+                <p>info@fcm.group</p>
+                <p>fcmgroup.uz</p>
+            </div>
+
+            <div class="footer-col links-section">
+                <h4>Shartlar</h4>
+                <nav class="footer-nav">
+                    <a href="#">Foydalanuvchi shartnomasi</a>
+                    <a href="#">Dorixonalarni ulash</a>
+                    <a href="#">Reklama</a>
+                    <a href="#">Foydalanish shartlari</a>
+                    <a href="#">Savollar va javoblar</a>
+                </nav>
+            </div>
+
+            <div class="footer-col qr-code-section">
+                <h4>Ilovani yuklang</h4>
+                <div class="qr-code-box">
+                    <img src="./image/qr.png" alt="Ilova QR Kodi">
+                </div>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-telegram-plane"></i></a>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            <div class="copyright">
+                © 2017-2025 Maʼlumot xizmati "ArzonApteka.Uz"
+            </div>
+
+            <hr class="footer-divider">
+
+            <div class="warning-text">
+                <p class="main-warning">
+                    OʻZ-OʻZINI DAVOLASH SOGʻLIGINGIZGA ZARAR YETKAZISHI MUMKIN! DORI-DARMONLARNI QOʻLLASH-DAN OLDIN
+                    SHIFOKOR BILAN MASLAHATLASHING.
+                </p>
+                <p class="disclaimer-text">
+                    Saytdagi maʼlumotlar tanishish maqsadida keltirilgan boʻlib, shifokor bilan shaxsiy koʻrish-tuvining
+                    oʻrnini bosolmaydi. Saytda koʻrsatilgan dori vositalarining qoʻllanishiga qarab koʻrsatkichlari
+                    boʻlishi mumkin. Ulardan foydalanishdan oldin ishlatma qoʻllanmasi bilan tanishish yoki
+                    mutaxassislardan maslahat olish tavsiya etiladi. (Davlat monopoliyaga qarshi kurash qoʻmitasining
+                    2010 yil 18 oktabrdagi № 1024-4-sonli qaroriga muvofiq, Adliya vazirligida roʻyxatga olingan.)
+                </p>
+            </div>
+        </div>
+    </footer>
+
+<script>
+        // 1. Savat belgisi raqamini yangilash
+        function updateCartBadge() {
+            const cart = JSON.parse(localStorage.getItem('cart')) || [];
+            const totalCount = cart.reduce((sum, item) => sum + item.quantity, 0);
+            const badge = document.getElementById('cart-count');
+            if (badge) badge.innerText = totalCount;
+        }
+
+        // 2. Savatdagi dorilarni ekranga chiqarish
+        function displayCart() {
+            const container = document.getElementById('cart-items-container');
+            const cart = JSON.parse(localStorage.getItem('cart')) || [];
+
+            if (cart.length === 0) {
+                container.innerHTML = `
+                    <div style="grid-column: 1/-1; text-align: center; padding: 50px;">
+                        <i class="fas fa-shopping-basket" style="font-size: 50px; color: #ccc;"></i>
+                        <h2>Savat hozircha bo'sh</h2>
+                        <a href="index.html" style="color: #28a745; text-decoration: none; font-weight: bold;">Dori tanlash uchun qaytish</a>
+                    </div>`;
+                updateCartBadge();
+                return;
+            }
+
+            container.innerHTML = cart.map((item, index) => `
+                <div class="product-card" style="position: relative; border: 1px solid #eee; padding: 20px; border-radius: 12px; background: #fff; box-shadow: 0 4px 6px rgba(0,0,0,0.05);">
+                    <button onclick="removeItem(${index})" style="position: absolute; top: 10px; right: 10px; background: none; border: none; font-size: 20px; cursor: pointer; color: #ff4d4d;">&times;</button>
+                    
+                    <h2 style="font-size: 18px; margin-bottom: 10px;">${item.name}</h2>
+                    
+                    <div style="display: flex; align-items: center; gap: 15px; margin-bottom: 15px;">
+                        <img src="${item.image}" alt="${item.name}" style="width: 80px; height: 80px; object-fit: cover; border-radius: 8px;">
+                        <div>
+                            <p style="margin: 0; color: #666;">Narxi: ${Number(item.price).toLocaleString()} so'm</p>
+                            <p style="margin: 5px 0; font-weight: bold;">Soni: ${item.quantity} dona</p>
+                        </div>
+                    </div>
+
+                    <div style="background: #f9f9f9; padding: 10px; border-radius: 8px; text-align: center;">
+                        <span style="font-weight: bold; color: #28a745;">Jami: ${(item.price * item.quantity).toLocaleString()} so'm</span>
+                    </div>
+
+                    <button class="qr-code-btn" style="width: 100%; margin-top: 15px; padding: 10px; border: 1px solid #28a745; background: white; color: #28a745; border-radius: 5px; cursor: pointer;">
+                        <i class="fas fa-qrcode"></i> QR-kod ko'rsatish
+                    </button>
+                </div>
+            `).join('');
+
+            updateCartBadge();
+        }
+
+        // 3. Mahsulotni savatdan o'chirish
+        function removeItem(index) {
+            let cart = JSON.parse(localStorage.getItem('cart')) || [];
+            cart.splice(index, 1);
+            localStorage.setItem('cart', JSON.stringify(cart));
+            displayCart(); // Ekranni yangilash
+        }
+
+        // Sahifa yuklanishi bilan ishga tushirish
+        document.addEventListener('DOMContentLoaded', displayCart);
+    </script>
+</body>
+
+</html>

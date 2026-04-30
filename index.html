@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="uz">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ArzonApteka - shaharingiz dorixonalarida </title>
+    <link rel="icon" type="image/png" href="./image/llogo.png">
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+<body>
+
+    <header class="main-header">
+        <div class="header-container">
+            <a class="logo" href="./index.html">
+                <img src="./image/image.png" alt="ArzonApteka Logo">
+                <span>ArzonApteka</span>
+            </a>
+            <nav class="main-nav">
+                <a href="./index.html">Asosiy</a>
+                <a href="#">Telegram bot</a>
+                <a href="./dorihona_katalog.html">Dorixonalar katalogi</a>
+            </nav>
+            <div class="language-selector">
+                <a href="#" class="active">Oʻz</a>
+                <span>|</span>
+                <a href="#">Ру</a>
+                <span>|</span>
+                <a href="#">En</a>
+            </div>
+            <div class="header-icons">
+                <a href="./savat.html" class="cart-icon-container">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span id="cart-count">0</span> </a>
+                <i class="fas fa-sign-in-alt"></i>
+            </div>
+        </div>
+    </header>
+
+    <div class="search-bar-section">
+        <div class="search-container">
+            <div class="location">
+                <i class="fas fa-map-marker-alt"></i>
+                <span>Guliston</span>
+            </div>
+            <div class="search-input-wrapper">
+                <i class="fas fa-search"></i>
+                <input type="text" placeholder="Qandey dori izlayabsiz?">
+            </div>
+
+        </div>
+    </div>
+
+    <div class="features-section">
+        <div class="features-container">
+            <div class="feature-card">
+                <div class="icon-circle"><i class="fas fa-search"></i></div>
+                <h3>Mahsulotlarni qidirish</h3>
+                <p>Qidiruv satriga mahsulot nomini kiriting</p>
+            </div>
+            <div class="feature-card">
+                <div class="icon-circle"><i class="fas fa-list-alt"></i></div>
+                <h3>Taklifni tanlash</h3>
+                <p>Dorixonalarda mavjudligini tekshiring va narxlarni taqqoslang</p>
+            </div>
+            <div class="feature-card">
+                <div class="icon-circle"><i class="fas fa-qrcode"></i></div>
+                <h3>QR-kod</h3>
+                <p>Taklifni tanlang va QR kodini oling</p>
+            </div>
+            <div class="feature-card">
+                <div class="icon-circle"><i class="fas fa-shopping-bag"></i></div>
+                <h3>Xarid</h3>
+                <p>Dorixonada QR kod yordamida ro'yxatdagi dorilarni sotib oling</p>
+            </div>
+        </div>
+    </div>
+    
+    <div class="search-results-list" style="display: none;">
+    </div>
+
+    <div class="box">
+        <div class="slider-container">
+
+            <div class="slider-images">
+                <div class="slider-item active">
+                    <img src="./reklama/reklama.jfif" alt="Tongkat Ali va Magnesium Glycinate vitaminlari">
+                </div>
+
+                <div class="slider-item">
+                    <img src="./reklama/image.png" alt="Berberine va Ashwagandha vitaminlari">
+                </div>
+
+                <div class="slider-item">
+                    <img src="./reklama/lapor.jfif" alt="Selenium va boshqa vitaminlar">
+                </div>
+
+            </div>
+
+            <div class="dots-container"></div>
+        </div>
+    </div>
+
+
+    <div class="popular-products-section">
+        <div class="popular-products-container">
+            <h2>Ommabop mahsulotlar</h2>
+            <div class="product-slider-wrapper">
+            </div>
+            <!-- 1-praduct end -->
+            <div class="product-slider-wrapper">
+
+                <div class="slider-track">
+                    <div class="product-card">
+                        <div class="product-image-box">
+                            <img src="./dorilar/Dorzoopt.jfif" alt="Dorzopt Plus">
+                        </div>
+                        <p class="price">194 900 soʻm</p>
+                        <p class="name">Dorzoopt Plus, 20 mg/ml+5 mg/ml, 5 ml</p>
+                        <p class="manufacturer">S.C. Rompharm Company S.R.L, Ruminiya</p>
+                        <button class="store-button add-to-cart" 
+                                data-name="Dorzoopt Plus, 5 ml" 
+                                data-price="194900"
+                                data-image="./dorilar/Dorzoopt.jfif">
+                            Savatga qo'shish
+                        </button>
+                    </div>
+                
+                    <div class="product-card">
+                        <div class="product-image-box">
+                            <img src="./dorilar/Osteogenon.jfif" alt="Osteogenon">
+                        </div>
+                        <p class="price">228 000 soʻm</p>
+                        <p class="name">Osteogenon, tabletka №40</p>
+                        <p class="manufacturer">Pierre Fabre, Fransiya</p>
+                        <button class="store-button add-to-cart" 
+                                data-name="Osteogenon, №40" 
+                                data-price="228000"
+                                data-image="./dorilar/Osteogenon.jfif">
+                            Savatga qo'shish
+                        </button>
+                    </div>
+                
+                    <div class="product-card">
+                        <div class="product-image-box">
+                            <img src="./dorilar/Rigevidon.jfif" alt="Rigevidon">
+                        </div>
+                        <p class="price">39 525 soʻm</p>
+                        <p class="name">Rigevidon, tabletka №21</p>
+                        <p class="manufacturer">Gedeon Richter PLC, Vengriya</p>
+                        <button class="store-button add-to-cart" 
+                                data-name="Rigevidon, №21" 
+                                data-price="39525"
+                                data-image="./dorilar/Rigevidon.jfif">
+                            Savatga qo'shish
+                        </button>
+                    </div>
+                
+                    <div class="product-card">
+                        <div class="product-image-box">
+                            <img src="./dorilar/Regulon.jfif" alt="Regulon">
+                        </div>
+                        <p class="price">44 600 soʻm</p>
+                        <p class="name">Regulon, tabletka №21</p>
+                        <p class="manufacturer">Gedeon Richter PLC, Vengriya</p>
+                        <button class="store-button add-to-cart" 
+                                data-name="Regulon, №21" 
+                                data-price="44600"
+                                data-image="./dorilar/Regulon.jfif">
+                            Savatga qo'shish
+                        </button>
+                    </div>
+                
+                    <div class="product-card">
+                        <div class="product-image-box">
+                            <img src="./dorilar/Eutirox.jfif" alt="Eutirox">
+                        </div>
+                        <p class="price">34 600 soʻm</p>
+                        <p class="name">Eutirox, 50 mkg, tabletka №100</p>
+                        <p class="manufacturer">Merck KGaA, Germaniya</p>
+                        <button class="store-button add-to-cart" 
+                                data-name="Eutirox, 50 mkg" 
+                                data-price="34600"
+                                data-image="./dorilar/Eutirox.jfif">
+                            Savatga qo'shish
+                        </button>
+                    </div>
+                
+                    <div class="product-card">
+                        <div class="product-image-box">
+                            <img src="./dorilar/Roakkutan.jfif" alt="Roaccutane">
+                        </div>
+                        <p class="price">384 000 soʻm</p>
+                        <p class="name">Roakkutan, 20 mg, №30</p>
+                        <p class="manufacturer">Roche, Shveysariya</p>
+                        <button class="store-button add-to-cart" 
+                                data-name="Roakkutan, 20 mg" 
+                                data-price="384000"
+                                data-image="./dorilar/Roakkutan.jfif">
+                            Savatga qo'shish
+                        </button>
+                    </div>
+                
+                    <div class="product-card">
+                        <div class="product-image-box">
+                            <img src="./dorilar/Salbutamol.jfif" alt="Salbutamol">
+                        </div>
+                        <p class="price">21 300 soʻm</p>
+                        <p class="name">Salbutamol, aerozol 200 doza</p>
+                        <p class="manufacturer">Binofarm, Rossiya</p>
+                        <button class="store-button add-to-cart" 
+                                data-name="Salbutamol aerozol" 
+                                data-price="21300"
+                                data-image="./dorilar/Salbutamol.jfif">
+                            Savatga qo'shish
+                        </button>
+                    </div>
+                
+                    <div class="product-card">
+                        <div class="product-image-box">
+                            <img src="./dorilar/Allapinin.jfif" alt="Allapinin">
+                        </div>
+                        <p class="price">75 000 soʻm</p>
+                        <p class="name">Allapinin, tabletka №30</p>
+                        <p class="manufacturer">Radiks, Oʻzbekiston</p>
+                        <button class="store-button add-to-cart" 
+                                data-name="Allapinin, №30" 
+                                data-price="75000"
+                                data-image="./dorilar/Allapinin.jfif">
+                            Savatga qo'shish
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="features-section">
+    </div>
+
+    <div class="producers-section">
+        <div class="producers-container">
+            <h2>Eng yaxshi ishlab chiqaruvchilar</h2>
+
+            <div class="producers-slider-wrapper">
+                <div class="producers-slider-track">
+
+                    <div class="producer-card">
+                        <img src="./logolar/SERVIER.png" alt="SERVIER logosi">
+                        <p>Les Laboratories Servier</p>
+                    </div>
+                    <div class="producer-card">
+                        <img src="./logolar/Astra.png" alt="Astra Zeneca logosi">
+                        <p>Astra Zeneca</p>
+                    </div>
+                    <div class="producer-card">
+                        <img src="./logolar/bayer.png" alt="BAYER CH logosi">
+                        <p>Bayer CH</p>
+                    </div>
+                    <div class="producer-card">
+                        <img src="./logolar/haleon.png" alt="HALEON logosi">
+                        <p>HALEON</p>
+                    </div>
+                    <div class="producer-card">
+                        <img src="./logolar/krka.png" alt="KRKA logosi">
+                        <p>KRKA</p>
+                    </div>
+                    <div class="producer-card">
+                        <img src="./logolar/kusum.png" alt="Kusum Healthcare logosi">
+                        <p>Kusum Healthcare</p>
+                    </div>
+
+                    <div class="producer-card">
+                        <img src="./logolar/SERVIER.png" alt="SERVIER logosi">
+                        <p>Les Laboratories Servier</p>
+                    </div>
+                    <div class="producer-card">
+                        <img src="./logolar/Astra.png" alt="Astra Zeneca logosi">
+                        <p>Astra Zeneca</p>
+                    </div>
+                    <div class="producer-card">
+                        <img src="./logolar/bayer.png" alt="BAYER CH logosi">
+                        <p>Bayer CH</p>
+                    </div>
+                    <div class="producer-card">
+                        <img src="./logolar/haleon.png" alt="HALEON logosi">
+                        <p>HALEON</p>
+                    </div>
+                    <div class="producer-card">
+                        <img src="./logolar/krka.png" alt="KRKA logosi">
+                        <p>KRKA</p>
+                    </div>
+                    <div class="producer-card">
+                        <img src="./logolar/kusum.png" alt="Kusum Healthcare logosi">
+                        <p>Kusum Healthcare</p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="popular-products-section">
+    </div>
+
+    <footer class="main-footer">
+        <div class="footer-container">
+
+            <div class="footer-col contact-info">
+                <div class="logo">
+                    <img style="width: 30px; height: 30px;" src="./image/image.png" alt="ArzonApteka Logo">
+                    <span>ArzonApteka</span>
+                </div>
+                <p>Toshkent sh., Sh. Rashidov koʻchasi, 93a</p>
+                <p>info@fcm.group</p>
+                <p>fcmgroup.uz</p>
+            </div>
+
+            <div class="footer-col links-section">
+                <h4>Shartlar</h4>
+                <nav class="footer-nav">
+                    <a href="#">Foydalanuvchi shartnomasi</a>
+                    <a href="#">Dorixonalarni ulash</a>
+                    <a href="#">Reklama</a>
+                    <a href="#">Foydalanish shartlari</a>
+                    <a href="#">Savollar va javoblar</a>
+                </nav>
+            </div>
+
+            <div class="footer-col qr-code-section">
+                <h4>Ilovani yuklang</h4>
+                <div class="qr-code-box">
+                    <img src="./image/qr.png" alt="Ilova QR Kodi">
+                </div>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-telegram-plane"></i></a>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            <div class="copyright">
+                © 2017-2025 Maʼlumot xizmati "ArzonApteka.Uz"
+            </div>
+
+            <hr class="footer-divider">
+
+            <div class="warning-text">
+                <p class="main-warning">
+                    OʻZ-OʻZINI DAVOLASH SOGʻLIGINGIZGA ZARAR YETKAZISHI MUMKIN! DORI-DARMONLARNI QOʻLLASH-DAN OLDIN
+                    SHIFOKOR BILAN MASLAHATLASHING.
+                </p>
+                <p class="disclaimer-text">
+                    Saytdagi maʼlumotlar tanishish maqsadida keltirilgan boʻlib, shifokor bilan shaxsiy koʻrish-tuvining
+                    oʻrnini bosolmaydi. Saytda koʻrsatilgan dori vositalarining qoʻllanishiga qarab koʻrsatkichlari
+                    boʻlishi mumkin. Ulardan foydalanishdan oldin ishlatma qoʻllanmasi bilan tanishish yoki
+                    mutaxassislardan maslahat olish tavsiya etiladi. (Davlat monopoliyaga qarshi kurash qoʻmitasining
+                    2010 yil 18 oktabrdagi № 1024-4-sonli qaroriga muvofiq, Adliya vazirligida roʻyxatga olingan.)
+                </p>
+            </div>
+        </div>
+    </footer>
+    <script src="./js/script.js"></script>
+</body>
+
+</html>
